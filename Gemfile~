@@ -12,7 +12,10 @@ gem "therubyracer", :require => 'v8'
 # in production environments by default.
 
 group :development, :test do
-  gem "sqlite3-ruby", :require => "sqlite3"
+  gem "sqlite3"
+end
+group :production do
+  gem "pg"
 end
 
 group :assets do

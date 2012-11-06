@@ -14,6 +14,9 @@ gem "therubyracer", :require => 'v8'
 group :development, :test do
   gem "sqlite3"
 end
+group :production do
+  gem "pg"
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
