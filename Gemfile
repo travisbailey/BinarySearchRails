@@ -17,6 +17,11 @@ end
 group :production do
   gem "pg"
 end
+group :test do
+  gem "rspec-rails"
+  gem "autotest"
+  gem "autotest-rails"
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
