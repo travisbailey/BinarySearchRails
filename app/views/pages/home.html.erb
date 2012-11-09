@@ -1,0 +1,8 @@
+<h1><%= @array %></h1>
+<p>Looking for number <%= @search %>, 0 if found</p>
+<%= form_tag('', :method=>'post', :action=>'search', :controller=>'pages_controller') do%>
+	<%= label_tag(:q, "Number to search for") %>
+	<%= text_field_tag(:content) %>
+	<%= submit_tag("Search") %>
+<% end %>
+<p><%= @there %> </p>
